@@ -1,18 +1,55 @@
-body { margin: 0; padding: 0; }
-#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; // Ensure the body takes the full viewport height
+  display: flex;
+  flex-direction: column; // This will help in structuring the header, main content, and footer
+}
 
 .header {
-  height: 3rem;
-  background-color: black;
+  height: 4rem;
+  background-color: #426383;
   color: white;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.8rem 0;
+  }
+}
+
+
+main {
+  flex-grow: 1; // Takes available space between header and footer
+  display: flex;
+  flex-direction: column;
 }
 
 .map {
-  height: 100%;
+  position: relative; // Changed to relative for the flex-grow to take effect
+  flex-grow: 1; // Allows map to fill available space
+  width: 100%; // Ensure map takes full width of its container
 }
 
-.footer{
-  height: 3rem;
-  background-color: black;
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%; // Ensures map fills the .map container width
+}
+
+.footer {
+  height: 2rem;
+  background-color: #426383;
   color: white;
+  width: 100%;
+  display: flex;
+  align-content: center;
+
+  &__copy {
+    margin: 0.5rem 2rem;
+  }
 }

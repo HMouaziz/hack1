@@ -5,7 +5,7 @@ mapboxgl.accessToken = MAPBOX_API_KEY;
 const map = new mapboxgl.Map({
     container: 'map',
     projection: 'globe',
-    style: 'mapbox://styles/mapbox/streets-v12',
+    style: 'mapbox://styles/mapbox/outdoors-v12',
     zoom: 1.5,
     center: [30, 50]
 });

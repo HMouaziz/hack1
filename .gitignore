@@ -1,0 +1,9 @@
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+*main.css
+*.prettierrc
+.idea/*
+*.DS_Store
+secrets.js
